@@ -1,5 +1,48 @@
 /* CSS by Grant Lebans */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 *, *::before, *::after {
     display: border-box;
+}
+
+:root {
+    --off-white: #e8edd1;
+    --green: #6da08f;
+    --blue-gray: #4c5d75;
+    --dark-blue-gray: #333e4e;
+    --dark-gray: #2c2e31;
+    --bg-color: var(--off-white);
+    --font-color: var(--dark-gray);
+    --dk-bg-color: var(--dark-gray);
+    --dk-font-color: var(--off-white);
+    --space: 1rem;
+    --border-radius: 1rem 0.5rem;
+    --heading-font: "Rampart One", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    color: var(--dark-blue-gray);
+}
+
+h2 {
+    color: var(--blue-gray);
+}
+
+.dark-mode {
+    background-color: var(--dk-bg-color);
+    color: var(--dk-font-color);
+}
+.dark-mode h2 {
+    color: var(--green);
 }
 
