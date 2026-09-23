@@ -1,0 +1,5 @@
+/* CSS by Grant Lebans */
+*, *::before, *::after {
+    display: border-box;
+}
+
