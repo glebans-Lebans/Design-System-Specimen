@@ -114,6 +114,7 @@ main {
 
 .btt a {
     padding: 0.5rem;
+    margin-right: 0.5rem;
     border-radius: var(--btt-radius);
     float: right;
 }
@@ -138,9 +139,35 @@ img {
 .dark-mode {
     background-color: var(--dk-bg-color);
     color: var(--dk-font-color);
+    height: 200px;
 }
 .dark-mode h2 {
+    color: var(--light-green);
+}
+
+.btt-dark a {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: var(--btt-radius);
+    float: right;
+    background-color: var(--light-green);
+    color: var(--font-color);
+}
+
+.btt-dark a:hover {
+    background-color: var(--off-white);
+}
+
+.btt-dark a:focus {
+    outline: 4px solid var(--green);
+}
+
+.btt-dark a:active {
     color: var(--green);
+}
+
+.btt-dark a:disabled {
+    background-color: #888;
 }
 
 footer {
