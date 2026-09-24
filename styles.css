@@ -23,13 +23,14 @@
     --space-card: 1rem;
     --border-radius: 0.25rem;
     --btt-radius: 4rem;
-    --drop-shadow: 2px 2px 2px var(--dark-blue-gray);
+    --drop-shadow: 3px 3px 3px var(--dark-blue-gray);
     --heading-font: "Rampart One", sans-serif;
     --content-font: Arial, sans-serif;
 }
 
 body {
     background-color: var(--bg-color);
+    background-image: linear-gradient(transparent 80%, var(--light-green));
     color: var(--font-color);
     font-family: var(--content-font);
     line-height: 1.5;
@@ -105,11 +106,21 @@ main {
     margin: 1rem 0;
     border: 1px solid var(--dark-blue-gray);
     border-radius: var(--border-radius);
+    background-image: linear-gradient(transparent 80%, var(--light-green));
 }
 
 .callout {
     background-color: var(--card-callout);
     box-shadow: var(--drop-shadow);
+    background-image: linear-gradient(315deg, var(--green) 10px, transparent 75%);
+}
+
+form {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    width: 200px;
+    margin: auto;
 }
 
 .btt a {
@@ -184,6 +195,9 @@ footer {
     nav ul {
         display: flex;
         justify-content: center;
+    }
+    form {
+        width: 400px;
     }
 }
 
