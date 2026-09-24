@@ -9,17 +9,20 @@
 
 :root {
     --off-white: #e8edd1;
+    --light-green: #dff2af;
     --green: #6da08f;
     --blue-gray: #4c5d75;
     --dark-blue-gray: #333e4e;
     --dark-gray: #2c2e31;
     --bg-color: var(--off-white);
+    --card-callout: var(--light-green);
     --font-color: var(--dark-gray);
     --dk-bg-color: var(--dark-gray);
     --dk-font-color: var(--off-white);
     --space-aside: 0.5rem;
     --space-card: 1rem;
     --border-radius: 0.25rem;
+    --drop-shadow: 2px 2px 2px var(--dark-blue-gray);
     --heading-font: "Rampart One", sans-serif;
     --content-font: Arial, sans-serif;
 }
@@ -96,6 +99,11 @@ main {
     border-radius: var(--border-radius);
 }
 
+.callout {
+    background-color: var(--card-callout);
+    box-shadow: var(--drop-shadow);
+}
+
 aside {
     max-width: 60ch;
     margin: auto;
@@ -103,6 +111,12 @@ aside {
 
 aside h2, aside p {
     padding: var(--space-aside);
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Theme */
