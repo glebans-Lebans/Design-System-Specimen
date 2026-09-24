@@ -13,6 +13,7 @@
     --green: #6da08f;
     --blue-gray: #4c5d75;
     --dark-blue-gray: #333e4e;
+    --gray: #888888;
     --dark-gray: #2c2e31;
     --bg-color: var(--off-white);
     --card-callout: var(--light-green);
@@ -24,7 +25,7 @@
     --border-radius: 0.25rem;
     --btt-radius: 4rem;
     --drop-shadow: 3px 3px 3px var(--dark-blue-gray);
-    --heading-font: "Rampart One", sans-serif;
+    --heading-font: "Rampart One", Arial, sans-serif;
     --content-font: Arial, sans-serif;
 }
 
@@ -91,7 +92,7 @@ a:active {
 }
 
 a:disabled {
-    background-color: #888;
+    background-color: var(--gray);
 }
 
 main {
@@ -150,8 +151,13 @@ img {
 .dark-mode {
     background-color: var(--dk-bg-color);
     color: var(--dk-font-color);
+    background-image: linear-gradient(transparent 80%, var(--dark-blue-gray));
+}
+
+aside .dark-mode {
     height: 200px;
 }
+
 .dark-mode h2 {
     color: var(--light-green);
 }
@@ -163,6 +169,7 @@ img {
     float: right;
     background-color: var(--light-green);
     color: var(--font-color);
+    border: 1px solid var(--blue-gray);
 }
 
 .btt-dark a:hover {
@@ -178,7 +185,7 @@ img {
 }
 
 .btt-dark a:disabled {
-    background-color: #888;
+    background-color: var(--gray);
 }
 
 footer {
