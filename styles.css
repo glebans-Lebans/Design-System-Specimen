@@ -2,8 +2,9 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
+/* Selective reset */
 *, *::before, *::after {
-    display: border-box;
+    box-sizing: border-box;
 }
 
 :root {
@@ -16,17 +17,20 @@
     --font-color: var(--dark-gray);
     --dk-bg-color: var(--dark-gray);
     --dk-font-color: var(--off-white);
-    --space: 1rem;
-    --border-radius: 1rem 0.5rem;
+    --space-aside: 0.5rem;
+    --space-card: 1rem;
+    --border-radius: 0.25rem;
     --heading-font: "Rampart One", sans-serif;
+    --content-font: Arial, sans-serif;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
+    font-family: var(--content-font);
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--heading-font);
 }
 
@@ -34,10 +38,17 @@ h1 {
     color: var(--dark-blue-gray);
 }
 
-h2 {
+h2, h3 {
     color: var(--blue-gray);
 }
 
+.card {
+    padding: var(--space-card);
+    border: 1px solid var(--dark-blue-gray);
+    border-radius: var(--border-radius);
+}
+
+/* Theme */
 .dark-mode {
     background-color: var(--dk-bg-color);
     color: var(--dk-font-color);
