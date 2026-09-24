@@ -22,6 +22,7 @@
     --space-aside: 0.5rem;
     --space-card: 1rem;
     --border-radius: 0.25rem;
+    --btt-radius: 4rem;
     --drop-shadow: 2px 2px 2px var(--dark-blue-gray);
     --heading-font: "Rampart One", sans-serif;
     --content-font: Arial, sans-serif;
@@ -48,6 +49,13 @@ h1 {
 
 h2, h3 {
     color: var(--blue-gray);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: var(--off-white);
 }
 
 nav ul {
@@ -104,6 +112,12 @@ main {
     box-shadow: var(--drop-shadow);
 }
 
+.btt a {
+    padding: 0.5rem;
+    border-radius: var(--btt-radius);
+    float: right;
+}
+
 aside {
     max-width: 60ch;
     margin: auto;
@@ -116,7 +130,8 @@ aside h2, aside p {
 img {
     display:block;
     max-width: 100%;
-    height: auto;
+    height: 200px;
+    border: 2px dashed var(--blue-gray);
 }
 
 /* Theme */
