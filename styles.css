@@ -142,9 +142,8 @@ aside h2, aside p {
 
 img {
     display:block;
-    max-width: 100%;
-    height: 200px;
-    border: 2px dashed var(--blue-gray);
+    border-radius: 0.75rem;
+    box-shadow: var(--drop-shadow);
 }
 
 /* Theme */
