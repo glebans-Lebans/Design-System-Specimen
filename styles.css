@@ -245,7 +245,12 @@ img {
 }
 
 aside .dark-mode {
-    height: 200px;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+
+aside section {
+    padding: var(--space-card);
 }
 
 footer {
