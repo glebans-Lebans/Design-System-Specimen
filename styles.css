@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+body, img, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Root tokens */
 :root {
     --off-white: #e8edd1;
     --light-green: #dff2af;
@@ -26,14 +32,22 @@
     --drop-shadow: 3px 3px 3px var(--dark-blue-gray);
     --heading-font: "Rampart One", Arial, sans-serif;
     --content-font: Arial, sans-serif;
+    --h1-font-size: 2.2em;
+    --h2-font-size: 1.5em;
+    --h3-font-size: 1.25em;
+    --content-font-size: 1.1em;
+    --line-height: 1.5;
+    --label-font-weight: 700;
 }
 
+/* Selectors */
 body {
     background-color: var(--bg-color);
     background-image: var(--gradient);
     color: var(--font-color);
     font-family: var(--content-font);
-    line-height: 1.5;
+    font-size: var(--content-font-size);
+    line-height: var(--line-height);
     max-width: 600px;
     margin: auto;
     padding: 1rem;
@@ -45,11 +59,20 @@ h1, h2, h3 {
 
 h1 {
     color: var(--dark-blue-gray);
+    font-size: var(--h1-font-size);
     text-align: center;
 }
 
 h2, h3 {
     color: var(--blue-gray);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
 }
 
 header {
@@ -115,8 +138,16 @@ form {
     display: grid;
     grid-template-rows: auto;
     gap: 0.5rem;
-    width: 200px;
+    width: auto;
     margin: auto;
+}
+
+input, select, legend {
+    padding: 0.5rem;
+}
+
+label, legend {
+    font-weight: var(--label-font-weight);
 }
 
 input:hover, select:hover {
@@ -150,6 +181,7 @@ input[type=submit] {
     color: var(--off-white);
     border: 1px solid var(--dark-gray);
     border-radius: var(--border-radius);
+    font-size: var(--content-font-size);
 }
 
 input[type=submit]:hover {
@@ -236,7 +268,7 @@ footer {
         justify-content: center;
     }
     form {
-        width: 400px;
+        width: 600px;
     }
 }
 
