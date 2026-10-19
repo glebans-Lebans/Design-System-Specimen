@@ -27,8 +27,11 @@ body, img, form {
     --gradient: linear-gradient(transparent 80%, var(--light-green));
     --space-aside: 0.5rem;
     --space-card: 1rem;
+    --border: 1px solid var(--dark-gray);
     --border-radius: 0.25rem;
     --btt-radius: 4rem;
+    --element-outline: 4px solid var(--dark-blue-gray);
+    --active-outline: 2px solid var(--green);
     --drop-shadow: 3px 3px 3px var(--dark-blue-gray);
     --heading-font: "Rampart One", Arial, sans-serif;
     --content-font: Arial, sans-serif;
@@ -97,7 +100,7 @@ a {
     padding: 0.5rem 5rem;
     background-color: var(--green);
     color: var(--off-white);
-    border: 1px solid var(--dark-gray);
+    border: var(--border);
     border-radius: var(--border-radius);
 }
 
@@ -106,7 +109,7 @@ a:hover {
 }
 
 a:focus {
-    outline: 4px solid var(--dark-blue-gray);
+    outline: var(--element-outline);
 }
 
 a:active {
@@ -123,7 +126,7 @@ main {
 .card {
     padding: var(--space-card);
     margin: 1rem 0;
-    border: 1px solid var(--dark-blue-gray);
+    border: var(--border);
     border-radius: var(--border-radius);
     background-image: var(--gradient);
 }
@@ -155,12 +158,12 @@ input:hover, select:hover {
 }
 
 input:focus, select:focus {
-    outline: 4px solid var(--dark-blue-gray);
+    outline: var(--element-outline);
     border-radius: var(--border-radius);
 }
 
 input:active, select:active {
-    outline: 2px solid var(--green);
+    outline: var(--active-outline);
 }
 
 input:disabled, select:disabled {
@@ -172,7 +175,7 @@ fieldset input:hover {
 }
 
 fieldset input:active {
-    outline: 2px solid var(--green);
+    outline: var(--active-outline);
 }
 
 input[type=submit] {
@@ -230,25 +233,21 @@ aside .dark-mode {
     color: var(--light-green);
 }
 
-.btt-dark a {
-    padding: 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: var(--btt-radius);
-    float: right;
+.dark a {
     background-color: var(--light-green);
     color: var(--dark-gray);
     border: 1px solid var(--blue-gray);
 }
 
-.btt-dark a:hover {
+.dark a:hover {
     background-color: var(--off-white);
 }
 
-.btt-dark a:focus {
+.dark a:focus {
     outline: 4px solid var(--green);
 }
 
-.btt-dark a:active {
+.dark a:active {
     color: var(--green);
 }
 
