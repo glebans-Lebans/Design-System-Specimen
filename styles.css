@@ -18,8 +18,7 @@
     --bg-color: var(--off-white);
     --card-callout: var(--light-green);
     --font-color: var(--dark-gray);
-    --dk-bg-color: var(--dark-gray);
-    --dk-font-color: var(--off-white);
+    --gradient: linear-gradient(transparent 80%, var(--light-green));
     --space-aside: 0.5rem;
     --space-card: 1rem;
     --border-radius: 0.25rem;
@@ -31,7 +30,7 @@
 
 body {
     background-color: var(--bg-color);
-    background-image: linear-gradient(transparent 80%, var(--light-green));
+    background-image: var(--gradient);
     color: var(--font-color);
     font-family: var(--content-font);
     line-height: 1.5;
@@ -103,7 +102,7 @@ main {
     margin: 1rem 0;
     border: 1px solid var(--dark-blue-gray);
     border-radius: var(--border-radius);
-    background-image: linear-gradient(transparent 80%, var(--light-green));
+    background-image: var(--gradient);
 }
 
 .callout {
@@ -177,13 +176,18 @@ img {
     display:block;
     border-radius: 0.75rem;
     box-shadow: var(--drop-shadow);
+    width: 100%;
+    height: 100%;
 }
 
 /* Theme */
 .dark-mode {
-    background-color: var(--dk-bg-color);
-    color: var(--dk-font-color);
-    background-image: linear-gradient(transparent 80%, var(--dark-blue-gray));
+    --bg-color: var(--dark-gray);
+    --font-color: var(--off-white);
+    --gradient: linear-gradient(transparent 80%, var(--dark-blue-gray));
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    background-image: var(--gradient);
 }
 
 aside .dark-mode {
@@ -200,7 +204,7 @@ aside .dark-mode {
     border-radius: var(--btt-radius);
     float: right;
     background-color: var(--light-green);
-    color: var(--font-color);
+    color: var(--dark-gray);
     border: 1px solid var(--blue-gray);
 }
 
