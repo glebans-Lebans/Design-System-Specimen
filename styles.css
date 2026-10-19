@@ -25,6 +25,12 @@ body, img, form {
     --card-callout: var(--light-green);
     --font-color: var(--dark-gray);
     --gradient: linear-gradient(transparent 80%, var(--light-green));
+    --link-color: var(--green);
+    --link-font-color: var(--off-white);
+    --link-hover-color: var(--blue-gray);
+    --hover-shadow: 0px 3px 0px var(--green);
+    --heading-color: var(--dark-blue-gray);
+    --heading-color-2: var(--blue-gray); 
     --space-aside: 0.5rem;
     --space-card: 1rem;
     --border: 1px solid var(--dark-gray);
@@ -61,13 +67,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: var(--dark-blue-gray);
+    color: var(--heading-color);
     font-size: var(--h1-font-size);
     text-align: center;
 }
 
 h2, h3 {
-    color: var(--blue-gray);
+    color: var(--heading-color-2);
 }
 
 h2 {
@@ -82,7 +88,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 5;
-    background-color: var(--off-white);
+    background-color: var(--bg-color);
 }
 
 nav ul {
@@ -98,14 +104,15 @@ nav li {
 
 a {
     padding: 0.5rem 5rem;
-    background-color: var(--green);
-    color: var(--off-white);
+    background-color: var(--link-color);
+    color: var(--link-font-color);
     border: var(--border);
     border-radius: var(--border-radius);
 }
 
 a:hover {
-    background-color: var(--blue-gray);
+    background-color: var(--link-hover-color);
+    box-shadow: var(--hover-shadow);
 }
 
 a:focus {
@@ -128,7 +135,9 @@ main {
     margin: 1rem 0;
     border: var(--border);
     border-radius: var(--border-radius);
+    /* background-color: var(--off-white); */
     background-image: var(--gradient);
+    /* color: var(--dark-gray); */
 }
 
 .callout {
@@ -180,15 +189,16 @@ fieldset input:active {
 
 input[type=submit] {
     padding: 0.5rem 5rem;
-    background-color: var(--green);
-    color: var(--off-white);
+    background-color: var(--link-color);
+    color: var(--link-font-color);
     border: 1px solid var(--dark-gray);
     border-radius: var(--border-radius);
     font-size: var(--content-font-size);
 }
 
 input[type=submit]:hover {
-    background-color: var(--blue-gray);
+    background-color: var(--link-hover-color);
+    box-shadow: var(--hover-shadow);
 }
 
 .btt a {
@@ -220,6 +230,15 @@ img {
     --bg-color: var(--dark-gray);
     --font-color: var(--off-white);
     --gradient: linear-gradient(transparent 80%, var(--dark-blue-gray));
+    --link-color: var(--light-green);
+    --link-font-color: var(--dark-gray);
+    --link-hover-color: var(--off-white);
+    --element-outline: 4px solid var(--green);
+    --border: 1px solid var(--blue-gray);
+    --heading-color: var(--light-green);
+    --heading-color-2: var(--light-green);
+    --card-callout: var(--dark-blue-gray);
+
     background-color: var(--bg-color);
     color: var(--font-color);
     background-image: var(--gradient);
@@ -227,28 +246,6 @@ img {
 
 aside .dark-mode {
     height: 200px;
-}
-
-.dark-mode h2 {
-    color: var(--light-green);
-}
-
-.dark a {
-    background-color: var(--light-green);
-    color: var(--dark-gray);
-    border: 1px solid var(--blue-gray);
-}
-
-.dark a:hover {
-    background-color: var(--off-white);
-}
-
-.dark a:focus {
-    outline: 4px solid var(--green);
-}
-
-.dark a:active {
-    color: var(--green);
 }
 
 footer {
