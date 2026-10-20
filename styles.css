@@ -1,5 +1,7 @@
 /* CSS by Grant Lebans */
 /* Google Fonts */
+/* Rampart One font designed by Fontworks Inc. */
+/* Available weights: Regular 400 */
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
 /* Selective reset */
@@ -135,9 +137,7 @@ main {
     margin: 1rem 0;
     border: var(--border);
     border-radius: var(--border-radius);
-    /* background-color: var(--off-white); */
     background-image: var(--gradient);
-    /* color: var(--dark-gray); */
 }
 
 .callout {
@@ -191,7 +191,7 @@ input[type=submit] {
     padding: 0.5rem 5rem;
     background-color: var(--link-color);
     color: var(--link-font-color);
-    border: 1px solid var(--dark-gray);
+    border: var(--border);
     border-radius: var(--border-radius);
     font-size: var(--content-font-size);
 }
